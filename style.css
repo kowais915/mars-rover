@@ -10,7 +10,8 @@ div{
 }
 #container{
     display: flex;
-    margin: 5px 5px;
-    width: 100%;
     justify-content: center;
+    flex-direction: row;
+
+    
 }

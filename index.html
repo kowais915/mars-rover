@@ -16,42 +16,60 @@
    
 
   <div id="container">
-    <div id="form">
-         <!-- Form Starts -->
-     <form>
-        <label for = "search">Search</label>
-        <input type="text" id="search" name="search">
-    </form>
 
-    </div>
+        
+            <!-- dropdown for rovers starts -->
+            <div id="rovers">
+                Select Rover
+                <select>
+                    <option value="opportunity">Opportunity</option>
+                    <option value="curiosity">Curiosity</option>
+                    <option value="spirit">Spirit</option>
+                    
+                    
 
-    <!-- Form ends -->
+                </select>
 
-    <!-- dropdown starts -->
-    <div id="drop">
-        Select Camera
-        <select>
-            <option value="fhaz">Front Hazard Avoidance Camera</option>
-            <option value="rhaz">Rear Hazard Avoidance Camera</option>
-            <option value="mast">Mast Camera</option>
-            <option value="chemcam">Chemistry and Camera Complex</option>
-            <option value="mahli">Mars Hand Lens Imager</option>
-            <option value="mardi"> Mars Descent Imager</option>
-            <option value="navcam">Navigation Camera</option>
-            <option value="minites">MINITES</option>
-        </select>
-    </div>
-    <!-- dropdown ends -->
+            </div>
+            <!-- dropdown for rovers ends -->
 
-    <div id="cal">
-        <label for="taken-on">Date</label>
-        <input onchange="detect(event)" type="date" id="take-on" name="taken-on value="2005-12-12" min="2005-12-12" max="2022-01-28">
-    </div>
+            <!-- dropdown for cameras starts -->
+            <div id="drop">
+                Select Camera
+                <select>
+                    <option value="fhaz">Front Hazard Avoidance Camera</option>
+                    <option value="rhaz">Rear Hazard Avoidance Camera</option>
+                    <option value="mast">Mast Camera</option>
+                    <option value="chemcam">Chemistry and Camera Complex</option>
+                    <option value="mahli">Mars Hand Lens Imager</option>
+                    <option value="mardi"> Mars Descent Imager</option>
+                    <option value="navcam">Navigation Camera</option>
+                    <option value="minites">MINITES</option>
+                </select>
+            </div>
+            <!-- dropdown for cameras ends -->
+        
+
+            <!-- calendar starts -->
+
+            <div id="cal">
+                <label for="taken-on">Date</label>
+                <input onchange="detect(event)" type="date" id="take-on" name="taken-on value="2005-12-12" min="2005-12-12" max="2017-01-28">
+            </div>
+
+            <!-- calendar ends -->
+            <div>
+                <button id="btn">Search</button>
+            </div>
 
   </div>
 
+
+ 
     <!-- Rover Details -->
-    <p id="name"></p>
+  <div id="details">
+
+  </div>
 
     
  

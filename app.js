@@ -1,15 +1,15 @@
 
 // we will be fetching data from the Mars Rover API
-
+const apK = "7k2p6Ys2NIb4N6A6n771LTgCOapH2YBh9JlAy1G9";
+const base = "https://api.nasa.gov/mars-photos/api/v1/rovers";
 //get rover by name
-const goFitch = async (rovername)=> {
+const goFitch = async (rovername,camera,date )=> {
 
 
-    const apK = "7k2p6Ys2NIb4N6A6n771LTgCOapH2YBh9JlAy1G9";
-    const base = "https://api.nasa.gov/mars-photos/api/v1/rovers";
+   
 
     
-    const userInp = `/${rovername}?&api_key=${apK}`;
+    const userInp = `/${rovername}/photos?sol=1000&${camera}&earth_date=${date}&api_key=${apK}`;
 
     const comb = base + userInp;
 
@@ -23,6 +23,7 @@ const goFitch = async (rovername)=> {
     return data;
 
 };
+
 
 
 
