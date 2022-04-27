@@ -13,22 +13,49 @@
     <h1>Mars Rover Photos</h1>
 
     
-    <!-- Form Starts -->
-    <form action="" id="form">
+   
+
+  <div id="container">
+    <div id="form">
+         <!-- Form Starts -->
+     <form>
         <label for = "search">Search</label>
         <input type="text" id="search" name="search">
     </form>
+
+    </div>
+
     <!-- Form ends -->
 
+    <!-- dropdown starts -->
+    <div id="drop">
+        Select Camera
+        <select>
+            <option value="fhaz">Front Hazard Avoidance Camera</option>
+            <option value="rhaz">Rear Hazard Avoidance Camera</option>
+            <option value="mast">Mast Camera</option>
+            <option value="chemcam">Chemistry and Camera Complex</option>
+            <option value="mahli">Mars Hand Lens Imager</option>
+            <option value="mardi"> Mars Descent Imager</option>
+            <option value="navcam">Navigation Camera</option>
+            <option value="minites">MINITES</option>
+        </select>
+    </div>
+    <!-- dropdown ends -->
+
+    <div id="cal">
+        <label for="taken-on">Date</label>
+        <input onchange="detect(event)" type="date" id="take-on" name="taken-on value="2005-12-12" min="2005-12-12" max="2022-01-28">
+    </div>
+
+  </div>
 
     <!-- Rover Details -->
     <p id="name"></p>
 
-    <script src="./app.js" ></script>
+    
+ 
 
-    <div id="photos">
-        <img src="" id = "nasaPhotos" width="500px" height="500px">
-    </div>
     <script src="./app.js" defer ></script>
     <script src="./dom.js" defer ></script>
 

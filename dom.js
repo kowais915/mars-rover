@@ -16,4 +16,13 @@ searchForm.addEventListener('submit', (event=>{
     
 }))
 
- 
+//the dropdown
+const cam = document.getElementById('drop');
+cam.addEventListener('change', event=>{
+    console.log(event.target.value);
+})
+
+//the date
+const detect = (event)=>{
+    console.log(event.target.value);
+}

@@ -5,3 +5,12 @@ body{
     text-align: center;
 }
 
+div{
+    margin: 10px;
+}
+#container{
+    display: flex;
+    margin: 5px 5px;
+    width: 100%;
+    justify-content: center;
+}
