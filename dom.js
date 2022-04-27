@@ -47,18 +47,22 @@ button.addEventListener('click', event=>{
     goFitch(rover, camera, date).then(data=>{
         console.log(data);
         // rover details
-        details.innerHTML = `
-        
-            <h3>Name: ${data.photos[4].rover.name}</h3>
-            <h4>Launch: ${data.photos[0].rover.launch_date}</h4>
-            <h4>Landed: ${data.photos[0].rover.landing_date} </h4>
-            <div style="height: 300px">
-            <img src="${data.photos[0].img_src}"/> 
-            </div>
 
+        for(let i = 0; i<5; i++){
+        details.innerHTML += `
+        <div style="height: 300px">
+            <h3>Name: ${data.photos[i].rover.name}</h3>
+            <h4>Launch: ${data.photos[i].rover.launch_date}</h4>
+            <h4>Landed: ${data.photos[i].rover.landing_date} </h4>
+           
+            <img src="${data.photos[i].img_src}"/> 
+            </div>
+           
         
         `
-        
+        }
+
+        document.reset();
 
 
     }).catch(err=>{
