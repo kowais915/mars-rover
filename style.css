@@ -3,27 +3,53 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    width: 1000px;
+
+    background-color: gray;
+    color:white;
+    font-size: 1.4rem;
+
 }
 
 div{
     margin: 10px;
 }
+
 #container{
     display: flex;
     justify-content: center;
     flex-direction: row;
 
+    flex-wrap: wrap;
+
+}
+
+body > h1{
+    background-color: black;
+    color:orange;
+    padding: 10px;
+    margin: 0px;
+}
+
+#details{
+    margin: 0;
+    background-color: black;
+}
+
+.formSelection{
+    width: 200px;
+    height: 25px;
+}
+
+#btn{
+    color:orange;
+    background-color: black;
+    
+}
+
+#btn:hover{
+    background-color: rgba(0,0,0,0.5)
+}
+
     
 
-}
 
-div #details{
-   overflow:-moz-hidden-unscrollable;
-   display: flex;
-   flex-direction: row;
-   margin: 120px;
-   width: 300px;
-   height: 400px;
-   background-size: contain;
-}
