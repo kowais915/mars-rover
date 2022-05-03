@@ -49,20 +49,62 @@ button.addEventListener('click', event=>{
         // rover details
 
         for(let i = 0; i<5; i++){
-        details.innerHTML += `
-        <div style="height: 300px">
-            <h3>Name: ${data.photos[i].rover.name}</h3>
-            <h4>Launch: ${data.photos[i].rover.launch_date}</h4>
-            <h4>Landed: ${data.photos[i].rover.landing_date} </h4>
-           
-            <img src="${data.photos[i].img_src}"/> 
+        details.innerHTML = `
+
+        <div class="container">
+        <div class="row">
+        <div class="col-sm">
+
+            <div class="card" style="width: 18rem;">
+            <img src="${data.photos[i].img_src}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">${data.photos[i].rover.name}</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
-           
+            </div>
+
+
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+            <img src="${data.photos[i+1].img_src}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">${data.photos[i].rover.name}</h5>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            </div>
+
+      
+        </div>
+        <div class="col-sm">
+                <div class="card" style="width: 18rem;">
+                <img src="${data.photos[i+2].img_src}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">${data.photos[i].rover.name}</h5>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+       
+    
+       
         
         `
         }
 
-        document.reset();
+     
 
 
     }).catch(err=>{
